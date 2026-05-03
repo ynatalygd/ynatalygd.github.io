@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #D3D3D3;
+  color: #111;
+}
+
+/* MENU HAUT */
+.top-menu {
+  background: #682145;
+  padding: 10px;
+  text-align: center;
+}
+
+.top-menu a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* STRUCTURE 3 COLONNES */
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 200px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* COLONNES */
+.left {
+  background: white;
+  padding: 15px;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05); /* effet léger */
+}
+
+/* espacement plus agréable */
+.content section {
+  margin-bottom: 35px;
+}
+
+.content ul {
+  margin-left: 20px;
+}
+
+.content li {
+  margin-bottom: 5px;
+}
+
+.right {
+  background: white;
+  padding: 15px;
+  position: sticky;
+  top: 20px;
+}
+
+h1, h2, {
+  color: #4b2e83;
+}
+
+h3  {
+color: #682145;
+}
+
+.profile-pic {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* LIENS */
+a {
+  color: #4b2e83;
+}
+
+/* titres plus lisibles */
+h2 {
+  margin-top: 25px;
+}
+
+/* navigation droite plus claire */
+.right a {
+  text-decoration: none;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+/* menu droit */
+.right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right li {
+  margin-bottom: 8px;
+}
+/* meilleure hiérarchie visuelle */
+.content section {
+  margin-bottom: 30px;
+}
+
+/* séparation douce */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+/* sidebar plus lisible */
+.left p {
+  font-size: 0.95em;
+}
+
+
