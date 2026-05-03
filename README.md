@@ -1,0 +1,1 @@
+# ynatalygd.github.io
