@@ -24,6 +24,7 @@ body {
 
 .top-menu a:hover {
   text-decoration: underline;
+  transition: 0.2s ease;
 }
 
 /* STRUCTURE 3 COLONNES */
@@ -49,7 +50,7 @@ body {
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
-/* SIDEBARS */
+/* las barras de los lados */
 .right {
   position: sticky;
   top: 70px;
@@ -112,6 +113,7 @@ a {
 
 .right a:hover {
   text-decoration: underline;
+  transition: 0.2s ease;
 }
 
 /* LIGNE */
@@ -206,6 +208,10 @@ hr {
 .lang-switch a {
   color: #682145;
   font-weight: 500;
+}
+
+.lang-switch a:hover {
+  text-decoration: underline;
 }
 
 a:focus {
