@@ -212,6 +212,6 @@ hr {
 }
 
 a:focus {
-  outline: 2px solid #682145;
-  outline-offset: 2px;
+  outline: 2px solid #4b2e83;
+  outline-offset: 3px;
 }
