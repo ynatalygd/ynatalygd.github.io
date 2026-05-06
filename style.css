@@ -20,11 +20,13 @@ body {
   margin: 0 12px;
   padding: 4px 0;
   display: inline-block;
+  color: black;
 }
 
 .top-menu a:hover {
   text-decoration: underline;
-  transition: 0.2s ease;
+  transition: 0.5s ease;
+  color: violet;
 }
 
 .top-menu a.active {
@@ -211,12 +213,13 @@ hr {
 }
 
 .lang-switch a {
-  color: #682145;
+  color: white;
   font-weight: 500;
 }
 
 .lang-switch a:hover {
   text-decoration: underline;
+  color: #682145;
 }
 
 a:focus {
