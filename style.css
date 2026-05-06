@@ -20,13 +20,14 @@ body {
   margin: 0 12px;
   padding: 4px 0;
   display: inline-block;
-  color: black;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .top-menu a:hover {
   text-decoration: underline;
-  transition: 0.5s ease;
-  color: violet;
+  color: #ffd6ff;
 }
 
 .top-menu a.active {
