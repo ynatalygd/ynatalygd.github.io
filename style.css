@@ -1,15 +1,19 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #D3D3D3;
+  background: #f3f3f3;
   color: #111;
+  line-height: 1.6;
 }
 
 /* MENU HAUT */
 .top-menu {
   background: #682145;
-  padding: 10px;
+  padding: 12px 20px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .top-menu a {
@@ -17,6 +21,12 @@ body {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
+  padding: 4px 0;
+}
+
+.top-menu a:hover {
+  text-decoration: underline;
 }
 
 /* STRUCTURE 3 COLONNES */
@@ -30,18 +40,38 @@ body {
 }
 
 /* COLONNES */
-.left {
+.left,
+.content,
+.right {
   background: white;
-  padding: 15px;
+  padding: 18px;
+  box-sizing: border-box;
 }
 
 .content {
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.05); /* effet léger */
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
 }
 
-/* espacement plus agréable */
+/* SIDEBARS */
+.right {
+  position: sticky;
+  top: 70px;
+}
+
+/* TITRES */
+h1, h2 {
+  color: #4b2e83;
+}
+
+h3 {
+  color: #682145;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+/* CONTENU */
 .content section {
   margin-bottom: 35px;
 }
@@ -54,24 +84,13 @@ body {
   margin-bottom: 5px;
 }
 
-.right {
-  background: white;
-  padding: 15px;
-  position: sticky;
-  top: 20px;
-}
-
-h1, h2, {
-  color: #4b2e83;
-}
-
-h3  {
-color: #682145;
-}
-
+/* IMAGE */
 .profile-pic {
-  width: 50%;
+  width: 100%;
+  max-width: 180px;
   border-radius: 10px;
+  display: block;
+  margin: 0 auto 15px;
 }
 
 /* LIENS */
@@ -79,12 +98,17 @@ a {
   color: #4b2e83;
 }
 
-/* titres plus lisibles */
-h2 {
-  margin-top: 25px;
+/* MENU DROIT */
+.right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* navigation droite plus claire */
+.right li {
+  margin-bottom: 8px;
+}
+
 .right a {
   text-decoration: none;
 }
@@ -93,30 +117,83 @@ h2 {
   text-decoration: underline;
 }
 
-/* menu droit */
-.right ul {
-  list-style: none;
-  padding: 0;
-}
-
-.right li {
-  margin-bottom: 8px;
-}
-/* meilleure hiérarchie visuelle */
-.content section {
-  margin-bottom: 30px;
-}
-
-/* séparation douce */
+/* LIGNE */
 hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 15px 0;
 }
 
-/* sidebar plus lisible */
+/* TEXTE SIDEBAR */
 .left p {
   font-size: 0.95em;
 }
 
+/* ===================== */
+/* VERSION MOBILE */
+/* ===================== */
 
+@media screen and (max-width: 900px) {
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .left,
+  .right,
+  .content {
+    width: 100%;
+  }
+
+  .right {
+    position: static;
+  }
+
+  .top-menu {
+    text-align: center;
+  }
+
+  .top-menu a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+
+  .profile-pic {
+    max-width: 140px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .top-menu {
+    padding: 10px;
+  }
+
+  .top-menu a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .container {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .left,
+  .content,
+  .right {
+    padding: 14px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+}
