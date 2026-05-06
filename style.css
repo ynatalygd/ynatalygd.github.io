@@ -216,11 +216,13 @@ hr {
 .lang-switch a {
   color: #682145;
   font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .lang-switch a:hover {
+  color: #4b2e83;
   text-decoration: underline;
-  color: #682145;
 }
 
 a:focus {
