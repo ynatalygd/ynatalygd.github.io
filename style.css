@@ -22,7 +22,7 @@ body {
   display: inline-block;
   color: white;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
 .top-menu a:hover {
