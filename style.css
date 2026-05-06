@@ -27,6 +27,11 @@ body {
   transition: 0.2s ease;
 }
 
+.top-menu a.active {
+  text-decoration: underline;
+  color: #ffd6ff;
+}
+
 /* STRUCTURE 3 COLONNES */
 .container {
   display: grid;
