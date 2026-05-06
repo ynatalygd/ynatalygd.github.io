@@ -199,15 +199,19 @@ hr {
 }
 
 .lang-switch {
-  position: relative;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  font-size: 14px;
-  margin-bottom: 10px;
+  gap: 12px;
+  font-size: 13px;
+  padding: 8px 0;
 }
 
 .lang-switch a {
-  text-decoration: none;
-  margin: 0 5px;
+  color: #682145;
+  font-weight: 500;
+}
+
+a:focus {
+  outline: 2px solid #682145;
+  outline-offset: 2px;
 }
