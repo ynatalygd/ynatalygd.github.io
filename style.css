@@ -17,12 +17,9 @@ body {
 }
 
 .top-menu a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
+  margin: 0 12px;
   padding: 4px 0;
+  display: inline-block;
 }
 
 .top-menu a:hover {
@@ -154,9 +151,9 @@ hr {
   }
 
   .top-menu a {
-    display: inline-block;
-    margin: 6px 8px;
-  }
+  display: block;
+  margin: 8px 0;
+}
 
   .profile-pic {
     max-width: 140px;
