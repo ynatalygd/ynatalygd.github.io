@@ -229,3 +229,8 @@ a:focus {
   outline: 2px solid #4b2e83;
   outline-offset: 3px;
 }
+
+.terrain{
+color:3BC1E3
+font-size: 1em;
+}
